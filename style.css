@@ -251,7 +251,13 @@ body{
   font-size: 14px;
   line-height: 15px;
 }
-
+.cart span{
+  color: #ff960c;
+}
+.cart img{
+  width:30px;
+  height: 30px;
+}
 
 
 

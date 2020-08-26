@@ -60,7 +60,10 @@
       <span class="line-1">Returns </span><br>
       <span class="line-2">& Orders </span>
     </div>
-    <div class="cart"></div>
+    <div class="cart">
+      <span class="counter">0</span>
+      <figure><img src="img/shopping_cart_PNG64.png" alt=""></figure>
+    </div>
   </header>
   <section class="top-menu">
     <div class="deliver">
@@ -211,5 +214,16 @@
     <button><i class="fas fa-chevron-right"></i></button>
   </div>
 </section>
+<script>
+  let addToCart = document.querySelector(`.btnw`);
+  let buyNow = document.querySelector(`.btnw2`);
+  let count = document.querySelector(`.counter`);
+
+  function addToMyCart(){
+    count.textContent =  parseInt(count.textContent) +1
+  }
+  addToCart.addEventListener("click", addToMyCart);
+  buyNow.addEventListener("click", addToMyCart);
+</script>
 </body>
 </html>
